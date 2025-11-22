@@ -1,0 +1,30 @@
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE / Editor
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# PHP
+vendor/
+composer.lock
+
+# Sensitive configuration
+.env
+.env.*
+config.php
+backend/config/db.php
+
+# Cache files
+*.cache
+*.tmp
+
+# Node (in case someone uses npm for frontend)
+node_modules/
+
+# Uploads if you add photos later
+uploads/
