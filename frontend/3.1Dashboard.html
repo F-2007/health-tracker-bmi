@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Base Head info-->
+    <meta charset="UTF-8"> <!--It supports many languages-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Inetial Zoom 100%-->
+    <meta name="description" content="Track your health stats, calculate BMI instantly, and monitor fitness goals with this easy-to-use health tracker, Progress chart and visual tracker for fitness progress."> 
+    <meta name="keywords" content="BMI calculator, health tracker, fitness tracker, body mass index, weight management, wellness app, healthy lifestyle, fitness goals, nutrition, exercise, progress">
+    <link rel="icon" href="pics/yellow-heart_.avif">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geom:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <!--Base Head info-->
+
+    <title>Yellow Heart - Dashboard</title>
+    <link rel="stylesheet" href="3.1style.css">
+</head>
+<body>
+  <!-- <button style=>Dark Mode</button> change the body/content color, advanced transition -->
+  <h1 style="margin-top: 60px; font-size: 25px; text-align:center">Dashboard</h1>  
+  <p style="text-align: center; margin-bottom: 60px;">Track your <b style="color: blue;">body mass index</b> and monitor you <b style="color: blue;">progress</b> over time!</p>
+
+  <div class="calculator_container">
+    
+    <h1 style="font-size: 30px; text-align: center;">Body Mass Index <br> (BMI) Calculator</h1>
+
+    <p>Your Height (cm): </p>
+    <input type="number" class="calculator_container_input" id="height" placeholder="Enter your height in cm...">
+    <p>Your Weight (kg): </p>
+    <input style="margin-bottom: 15px" type="number" class="calculator_container_input" id="weight" placeholder="Enter your weight in kg...">
+  
+    <button class="calculator_container_submit" id="calculate_button">Compute BMI</button> <!--JS-->
+    
+    <input disabled type="text" class="calculator_container_result" id="bmi_result" placeholder="Your BMI will appear here...">
+    <h4>feedback: </h4> <span id="calculator_container_info"></span>
+  </div>
+  
+
+
+    <!-- <header>
+    <h1>Health Tracker</h1>
+    <h2>Health Tracker & BMI Calculator</h2>
+    <p>Track your body mass index and monitor your progress over time.</p>
+    <p>BMI Explains as we get taller, we should get a little heavier but not a lot heavier, Know if you normal weight or not!</p>
+    <p>Needed: Your weight and hight</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>BMI Calculator</h2>
+
+      <label for="weight">Weight (kg):</label>
+      <input type="number" id="weight" placeholder="Enter your weight"/>
+
+      <label for="weight">Height (cm):</label>
+      <input type="number" id="height" placeholder="Enter your height" />
+
+      <button>Calculate BMI</button>
+      <p>* When ready, please enter your data.</p>
+    </section>
+
+    <section>
+      <h2>Progress Tracker</h2>
+      <p>Each time you calculate your BMI, it will be added here.</p>
+      <table>
+        <thead>
+          <tr>
+            <td>Date</td>
+            <td>Weight</td>
+            <td>Height</td>
+            <td>BMI</td>
+            <td>Status</td>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+        <tfoot>
+  
+        </tfoot>
+      </table>
+
+
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Health Tracker Project
+  </footer>
+   -->
+
+<script src="3.1script.js"></script>
+</body>
+</html>
