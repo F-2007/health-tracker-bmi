@@ -16,6 +16,7 @@
 
     <title>Yellow Heart - Dashboard</title>
     <link rel="stylesheet" href="3.1style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
   <!-- <button style=>Dark Mode</button> change the body/content color, advanced transition -->
@@ -37,58 +38,19 @@
     <h4>feedback: </h4> <span id="calculator_container_info"></span>
   </div>
   
+  <!---->
+  <div style="text-align:center; margin-top:16px;">
+    <button id="save_entry" class="calculator_container_submit" style="background:#4CAF50;">Save Entry</button>
+    <button id="show_progress" class="calculator_container_submit" style="background:#2196F3;">Show Progress</button>
+  </div>
 
+  <p style="max-width:700px; margin:20px research_note; text-align:center; color:#222;">
+    <strong>Note</strong> — The results shown are based on general medical indicators and body mass index (BMI) rates as reported in medical research and references. This tool does not replace consultation with a qualified physician.
+  </p>
 
-    <!-- <header>
-    <h1>Health Tracker</h1>
-    <h2>Health Tracker & BMI Calculator</h2>
-    <p>Track your body mass index and monitor your progress over time.</p>
-    <p>BMI Explains as we get taller, we should get a little heavier but not a lot heavier, Know if you normal weight or not!</p>
-    <p>Needed: Your weight and hight</p>
-  </header>
-
-  <main>
-    <section>
-      <h2>BMI Calculator</h2>
-
-      <label for="weight">Weight (kg):</label>
-      <input type="number" id="weight" placeholder="Enter your weight"/>
-
-      <label for="weight">Height (cm):</label>
-      <input type="number" id="height" placeholder="Enter your height" />
-
-      <button>Calculate BMI</button>
-      <p>* When ready, please enter your data.</p>
-    </section>
-
-    <section>
-      <h2>Progress Tracker</h2>
-      <p>Each time you calculate your BMI, it will be added here.</p>
-      <table>
-        <thead>
-          <tr>
-            <td>Date</td>
-            <td>Weight</td>
-            <td>Height</td>
-            <td>BMI</td>
-            <td>Status</td>
-          </tr>
-        </thead>
-        <tbody>
-        </tbody>
-        <tfoot>
-  
-        </tfoot>
-      </table>
-
-
-    </section>
-  </main>
-
-  <footer>
-    © 2026 Health Tracker Project
-  </footer>
-   -->
+  <div style="max-width:800px; margin:20px auto; background:rgba(255,255,255,0.6); padding:12px; border-radius:8px;">
+   <canvas id="bmiChart" height="200"></canvas>
+  </div>
 
 <script src="3.1script.js"></script>
 </body>
