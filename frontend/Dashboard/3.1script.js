@@ -30,8 +30,6 @@ function calculateBMI() {
         _weight_condition.innerText = "You have Obesity, please consult a doctor for advice!";
     }    
 }
-
-
 _calculate_button.addEventListener('click', calculateBMI)
 
 
@@ -50,7 +48,7 @@ const chartCanvas = document.getElementById('bmiChart');
 
 let bmiChart = null;
 
-// دالة لحساب BMI (تستخدم نفس دالتك)
+
 function calculateBMIValue() {
   const h = Number(heightInput.value) / 100;
   const w = Number(weightInput.value);
@@ -58,16 +56,14 @@ function calculateBMIValue() {
   return Number((w / (h * h)).toFixed(2));
 }
 
-// تنبيه المستخدم لو لم يدخل بيانات صحيحة
 function validateAndShow() {
   const val = calculateBMIValue();
   if (val === null) {
     infoSpan.innerText = "Please enter valid height and weight!";
     bmiResult.value = '';
     return null;
-  }
+}
   bmiResult.value = val;
-  // نفس رسائل الحالة
   if (val < 18.5) infoSpan.innerText = "You are underweight, eat more nutritious food!";
   else if (val <= 24.9) infoSpan.innerText = "You have a normal weight, good job!";
   else if (val <= 29.9) infoSpan.innerText = "You are overweight, consider exercising more!";
@@ -98,17 +94,15 @@ function saveHistory(history) {
   localStorage.setItem('bmi_history', JSON.stringify(history));
 }
 
-// زر Save Entry
 saveBtn.addEventListener('click', () => {
   const val = validateAndShow();
   if (val === null) return;
   const history = loadHistory();
   history.push({ date: formatDate(), bmi: val });
   saveHistory(history);
-  infoSpan.innerText = "Entry saved ✅";
+  infoSpan.innerText = "Entry saved";
 });
 
-// رسم الرسم البياني باستخدام Chart.js
 function renderChart() {
   const history = loadHistory();
   if (!history.length) {
@@ -163,7 +157,7 @@ function renderChart() {
   infoSpan.innerText = `Showing ${history.length} saved entries.`;
 }
 
-// زر Show Progress
+
 showBtn.addEventListener('click', renderChart);
 
 // عند تحميل الصفحة، حاول عرض أي نتيجة سابقة خفيفة

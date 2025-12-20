@@ -1,10 +1,7 @@
 body{
-    margin: 0;
     background: linear-gradient(to right top, #FFF44F, #FFDD00, #FFAA00);
     min-height: 100vh; /*at-least height*/
     font-family: "Geom", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
 }
 
 
