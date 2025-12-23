@@ -1,21 +1,9 @@
-<!-- <?php
-$host ="localhost";
-$user="root";
-$password=2007;
-$database="users_auth";
 
-$conn =new mysqli($host,$user,$password,$database);
-if($conn->connect_error){
-    die("Connection failed: ". $conn->connect_error);
-}
-
-
-?> -->
 
 
 <?php
 $host = "127.0.0.1";
-$dbname = "Health_tracker";
+$dbname = "health_tracker";
 $user = "root";
 $password = "2007"; 
 
